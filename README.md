@@ -42,3 +42,5 @@ By default all levels can be printed, if you want to be able to limit the levels
 
 # Example
 You can look at the file **BP_ExampleLDebug**
+
+### If you don's see the plugin inside the Content Browser, you need to click on **Settings** top right of the Content Browser, then check **Show Plugin Content** ###
