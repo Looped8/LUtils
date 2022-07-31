@@ -4,6 +4,22 @@ Blueprint library Plugin for Unreal Engine 5+, for debug prints, vectors and loo
 # Requirements
 - UnrealEngine 5+
 
+# Main methods
+
+- LInfo, LDebug, LSuccess, LWarn, LError, each will print with different colors and durations, you can filter which levels to output on a per blueprint basis:
+
+![Prints](/Resources/Prints.png?raw=true)
+
+
+- LDrawDebugVectorOnActor, LDrawDebugVectorOnPlayer, will let you draw a vector on an actor, with optional offset, in worldspace or not:
+
+![Prints](/Resources/LDrawDebugVector.png?raw=true)
+
+
+- LForLoopWithDelay, LForLoopWithDelayAndWait, LForLoopSequential, LForEachLoopSequential, will let you have delays/latent nodes inside for loops:
+
+![Prints](/Resources/LForLoopSequential.png?raw=true)
+
 # Installation
 - Download: click on Code, Download Zip.
 - On your UnrealEngine project folder, create a folder **Plugins** if none is present.
@@ -22,6 +38,7 @@ By default all levels can be printed, if you want to be able to limit the levels
 - A new function will be added to your blueprint: **GetDebugMask**
   - You need to create a node **Make Bitmask** and set the type of enum to **ELDebugLevel** on the Details tab
   - You can click on **no flags** and check every levels that you want your blueprint to print
+  ![Alt text](Resources/BPI-GetDebugMask.png?raw=true "Optional Title")
 
 # Example
 You can look at the file **BP_ExampleLDebug**
